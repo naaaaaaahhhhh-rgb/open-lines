@@ -255,3 +255,5 @@ a { color: inherit; }
 @media (max-width: 760px) {
   .sparkle-4 { top: auto !important; bottom: 72px; }
 }
+
+.fine a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
