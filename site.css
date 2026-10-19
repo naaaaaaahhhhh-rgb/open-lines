@@ -239,3 +239,15 @@ a { color: inherit; }
   .tv-flash, .tv-text.tv-flash, .sparkle { animation: none; }
   .pick-link { transition: none; }
 }
+
+/* ---------- desktop-only adjustments (phones are untouched) ---------- */
+@media (min-width: 761px) {
+  .site-head .logo { width: 400px; }
+  .line-page .site-head .logo { width: 320px; }
+  .beep { max-width: none; white-space: nowrap; text-wrap: nowrap; }
+
+  /* main page: fine print and bottom-left sparkles sit at the bottom of the screen */
+  body:not(.line-page) { min-height: 100vh; display: flex; flex-direction: column; }
+  body:not(.line-page) main { flex: 1; }
+  body:not(.line-page) .sparkle-4 { top: auto !important; bottom: 10px; transform: none; }
+}

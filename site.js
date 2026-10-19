@@ -18,7 +18,7 @@
     var set = LAYOUTS[el.getAttribute("data-sparkles")] || LAYOUTS.page;
     set.forEach(function (s, i) {
       var img = document.createElement("img");
-      img.className = "sparkle";
+      img.className = "sparkle sparkle-" + (i + 1);
       img.src = s[0];
       img.alt = "";
       img.setAttribute("aria-hidden", "true");
